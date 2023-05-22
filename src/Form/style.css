@@ -1,0 +1,67 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.form__newTask {
+    border-radius: 0;
+    border: solid 2px #a1a1a1;
+    height: 40px;
+    padding: 10px;   
+}
+
+.form__button {
+    background: teal;
+    color: white;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.form__buttonDone {
+    background: #8dc477;
+    color: white;
+    border: none;
+    width:35px;
+    height:35px;
+}
+
+.form__buttonDone:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background: #9edb86;
+    transition: 1s; 
+}
+
+.form__buttonRemove:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background: #ff7e7e;
+    transition: 1s;
+}
+
+.form__buttonRemove {
+    background: rgb(230, 113, 113);
+    border: none;
+    color: white;
+    width:35px;
+    height:35px;
+}
