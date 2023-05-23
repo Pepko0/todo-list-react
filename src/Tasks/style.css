@@ -18,6 +18,37 @@
     color: red;
 }
 
+.task__button--done {
+    background: #8dc477;
+    color: white;
+    border: none;
+    width:35px;
+    height:35px;
+}
+
+.task__button--done:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background: #9edb86;
+    transition: 1s; 
+}
+
+.task__button--remove {
+    background: rgb(230, 113, 113);
+    border: none;
+    color: white;
+    width:35px;
+    height:35px;
+}
+
+.task__button--remove:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background: #ff7e7e;
+    transition: 1s;
+}
+
+
 
 .task__decoration {
     text-decoration: line-through;

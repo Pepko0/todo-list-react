@@ -36,32 +36,3 @@
     transform: scale(1.1);
 }
 
-.form__buttonDone {
-    background: #8dc477;
-    color: white;
-    border: none;
-    width:35px;
-    height:35px;
-}
-
-.form__buttonDone:hover {
-    font-weight: bold;
-    cursor: pointer;
-    background: #9edb86;
-    transition: 1s; 
-}
-
-.form__buttonRemove:hover{
-    font-weight: bold;
-    cursor: pointer;
-    background: #ff7e7e;
-    transition: 1s;
-}
-
-.form__buttonRemove {
-    background: rgb(230, 113, 113);
-    border: none;
-    color: white;
-    width:35px;
-    height:35px;
-}

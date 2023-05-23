@@ -7,15 +7,15 @@ const Tasks = (props) => (
             key={task.id}
             className={`task__item ${task.done && props.hideDoneTasks ? "task__item--hidden" : ""}`}
             >
-                <button className="form__buttonDone form__buttonDone--click"> 
+                <button className="task__button--done"> 
                     {task.done ? "✔" : ""}
                 </button>
                     
-                    <span className={`form__text ${task.done ? " task__decoration " : ""}`}>
+                    <span className={`${task.done ? " task__decoration " : ""}`}>
                         {task.content} 
                     </span>
                     
-                    <button className="form__buttonRemove">
+                    <button className="task__button--remove">
                         🗑
                     </button>
             </li>
