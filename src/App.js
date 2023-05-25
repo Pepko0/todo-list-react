@@ -14,7 +14,7 @@ function App() {
     { id: 1, content: "React", done: false },
     { id: 2, content: "Zrobić obiad", done: true },
   ]);
-
+ 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -22,6 +22,17 @@ function App() {
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
+
+  const toggleTaskDone = (id) => { 
+    setTasks(tasks => tasks.map(task => {
+      if(task.id === id){
+        return {...task, done: !task.done};
+      }
+      
+      return task;
+    }));
+
+  }
 
   return (
     <Container>
@@ -37,6 +48,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
