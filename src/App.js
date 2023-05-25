@@ -34,7 +34,7 @@ function App() {
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
-      ...tasks,
+      ...task,
       done: true,
     })));
   }
