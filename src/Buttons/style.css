@@ -11,11 +11,9 @@
     transition: 0.5s;     
 }
 
-
 .buttons__header:hover{
     cursor: pointer;
     color: rgb(1, 175, 175);
-
 }
 
 @media (max-width: 767px) {
@@ -26,7 +24,6 @@
     .buttons {
         grid-template-columns: 1fr;
     }
-
 }
 
 .buttons__header:disabled {

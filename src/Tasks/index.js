@@ -16,7 +16,8 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                 </button>
 
                 <span
-                    className={`${task.done ? " task__decoration " : ""}`}>
+                    className={`${task.done ? " task__decoration " : ""}`}
+                    >
                     {task.content}
                 </span>
 
@@ -28,7 +29,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
             </li>
         ))}
 
-    </ul >
+    </ul>
 );
 
 export default Tasks;

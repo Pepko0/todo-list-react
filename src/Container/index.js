@@ -1,6 +1,3 @@
-
-
-
 const Container = (props) => (
     <main className="body">
         {props.children}

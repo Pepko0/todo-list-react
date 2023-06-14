@@ -21,6 +21,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
                 Ukończ wszystkie
             </button>
         </div>
-    )
-}
+    );
+};
 export default Buttons;
