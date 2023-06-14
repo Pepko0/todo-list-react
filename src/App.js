@@ -47,8 +47,6 @@ function App() {
     ]);
   }
 
-
-
   return (
     <Container>
       <h1>Lista zadań</h1>
@@ -78,6 +76,6 @@ function App() {
       />
     </Container>
   );
-}
+};
 
 export default App;
