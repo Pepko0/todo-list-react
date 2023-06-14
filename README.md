@@ -1,5 +1,5 @@
 # Hello This is my " To Do List"
-## [To do List - link to page](https://pepko0.github.io/To-Do-List)
+## [To do List - link to page](https://pepko0.github.io/todo-list-react/)
 ---
 ## My name is Kacper
 I creted webiste wher You can add new task and change their status 
@@ -10,9 +10,11 @@ I creted webiste wher You can add new task and change their status
 * *HTML* 
 * *Grid* 
 * *Git* 
+* *React*
+* *BEM*
 
 ## Website **Operation** and **Design**
-[![Animation.gif](https://i.postimg.cc/05cNPprR/Animation.gif)](https://postimg.cc/K43b53nJ)
+[![readme1.gif](https://i.postimg.cc/5tw0cxdD/readme1.gif)](https://postimg.cc/Y4CkYBSx)
 
 
 
@@ -21,5 +23,5 @@ I creted webiste wher You can add new task and change their status
 
 
 ## I **invite You** to visit my page
-### Link: https://pepko0.github.io/To-Do-List
+### Link: https://pepko0.github.io/todo-list-react/
 version: beta 
