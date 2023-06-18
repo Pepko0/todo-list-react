@@ -11,7 +11,7 @@ const Form = ({ addNewTask, tasks }) => {
             addNewTask(newTaskContent.trim());
             setNewTaskContent("");
         };
-       
+        localStorage.setItem("Tasks", JSON.stringify(tasks));
     };
 
     return (
@@ -27,7 +27,6 @@ const Form = ({ addNewTask, tasks }) => {
             />
             <button
                 className="form__button"
-                ocClick={addLocalStorage}
             >
                 Dodaj zadanie
             </button>
