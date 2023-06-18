@@ -41,12 +41,9 @@ function App() {
         done: false,
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       },
-    ],
-    localStorage.setItem("task", JSON.stringify(tasks))
-    
-
-    );
+    ]);
   }
+
 
 
 
@@ -57,6 +54,7 @@ function App() {
         title="Dodaj nowe zadanie"
         body={<Form
           addNewTask={addNewTask}
+          tasks={tasks}
         />}
       />
       <Section

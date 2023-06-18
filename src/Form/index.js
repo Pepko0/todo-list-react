@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./style.css";
 
 
-const Form = ({ addNewTask }) => {
+const Form = ({ addNewTask, tasks }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
 
     const onFormSubmit = (event) => {
@@ -11,6 +11,7 @@ const Form = ({ addNewTask }) => {
             addNewTask(newTaskContent.trim());
             setNewTaskContent("");
         };
+       
     };
 
     return (
@@ -26,6 +27,7 @@ const Form = ({ addNewTask }) => {
             />
             <button
                 className="form__button"
+                ocClick={addLocalStorage}
             >
                 Dodaj zadanie
             </button>
