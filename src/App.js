@@ -48,25 +48,12 @@ function App() {
         content: newTaskContent,
         done: false,
       },
-  
-    ],
-    // localStorage.setItem("tasks", JSON.stringify(tasks))
-    );
+    ]);
   }
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks])
-
-
-  // useEffect(() => {
-  //   const storeTasks = localStorage.getItem("tasks");
-  //   if(storeTasks) {
-  //     const parsedTasks = JSON.parse(storeTasks);
-  //     setTasks(parsedTasks);
-  //   }
-  // },[]);
-
 
 
 
