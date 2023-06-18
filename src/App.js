@@ -7,7 +7,14 @@ import Container from "./Container";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  
+  const storeTasks = localStorage.getItem("tasks");
+
+  const [tasks, setTasks] = useState(
+    storeTasks 
+    ? JSON.parse(storeTasks)
+    : []
+  );
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -37,15 +44,29 @@ function App() {
     setTasks(tasks => [
       ...tasks,
       {
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
         content: newTaskContent,
         done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       },
-    ]);
+  
+    ],
+    // localStorage.setItem("tasks", JSON.stringify(tasks))
+    );
   }
+
   useEffect(() => {
-    localStorage.setItem("Tasks", JSON.stringify(tasks));
-  }, [tasks]);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks])
+
+
+  // useEffect(() => {
+  //   const storeTasks = localStorage.getItem("tasks");
+  //   if(storeTasks) {
+  //     const parsedTasks = JSON.parse(storeTasks);
+  //     setTasks(parsedTasks);
+  //   }
+  // },[]);
+
 
 
 
