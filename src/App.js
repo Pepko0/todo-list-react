@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -43,7 +43,9 @@ function App() {
       },
     ]);
   }
-
+  useEffect(() => {
+    localStorage.setItem("Tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
 
 
