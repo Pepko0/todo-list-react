@@ -39,18 +39,25 @@ function App() {
       {
         content: newTaskContent,
         done: false,
-        id: tasks.length === 0 ? 1 : tasks[tasks.length -1].id + 1,
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       },
-    ]);
+    ],
+    localStorage.setItem("task", JSON.stringify(tasks))
+    
+
+    );
   }
+
+
 
   return (
     <Container>
       <h1>Lista zadań</h1>
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form 
-          addNewTask={addNewTask} />}
+        body={<Form
+          addNewTask={addNewTask}
+        />}
       />
       <Section
         title="Lista zadań"
