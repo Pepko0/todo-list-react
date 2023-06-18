@@ -4,12 +4,6 @@
     grid-gap: 10px;
 }
 
-@media (max-width: 767px) {
-    .form {
-        grid-template-columns: 1fr;
-    }
-}
-
 .form__newTask {
     border-radius: 0;
     border: solid 2px #a1a1a1;
@@ -34,3 +28,11 @@
     transform: scale(1.1);
 }
 
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form__button:hover {
+        transform: scale(1);
+    }
+}
