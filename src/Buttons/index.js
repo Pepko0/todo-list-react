@@ -1,4 +1,3 @@
-// import "./style.css";
 import {Content, Button} from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => {
