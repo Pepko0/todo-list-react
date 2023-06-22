@@ -1,20 +1,18 @@
-import "./style.css";
+import { Unit, Header, Title, Body } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
-    <section className="section">
+    <Unit>
 
-        <header className="section__header">
-            <h2
-                className="section__title">
+        <Header>
+            <Title>
                 {title}
-            </h2>
+            </Title>
             {extraHeaderContent}
-        </header>
-        <div
-            className="section__body">
+        </Header>
+        <Body>
             {body}
-        </div>
-    </section>
+        </Body>
+    </Unit>
 );
 
 export default Section;

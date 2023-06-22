@@ -1,5 +1,5 @@
 const Container = (props) => (
-    <main className="body">
+    <main>
         {props.children}
     </main>
 )

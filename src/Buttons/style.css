@@ -16,6 +16,12 @@
     color: rgb(1, 175, 175);
 }
 
+.buttons__header:disabled {
+    color: #c1c1c1;
+    cursor: default;
+    transform: 1s;
+}
+
 @media (max-width: 767px) {
     .buttons__header {
      margin: 5px;
@@ -24,10 +30,4 @@
     .buttons {
         grid-template-columns: 1fr;
     }
-}
-
-.buttons__header:disabled {
-    color: #c1c1c1;
-    cursor: default;
-    transform: 1s;
 }

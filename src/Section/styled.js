@@ -1,9 +1,11 @@
-.section {
+import styled from "styled-components";
+
+export const Unit = styled.section`
     margin: 5px 0;
     background: rgb(255, 255, 255);
-}
+`;
 
-.section__header {
+export const Header = styled.header`
     padding: 10px;
     margin : 0px;
     border-bottom: solid 2px #eee;
@@ -12,23 +14,19 @@
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
-}
 
-.section__body {
-    padding: 15px;
-}
-
-.section__title {
-    padding: 10px;
-    margin : 0px;
-
-}
-
-@media (max-width: 767px) {
-    .section__header {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
         text-align: center;
     }
-}
 
+`;
 
+export const Title = styled.h2`
+    padding: 10px;
+    margin : 0px;
+`;
+
+export const Body = styled.div`
+    padding: 15px;
+`;
