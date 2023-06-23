@@ -8,8 +8,7 @@ import { useTasks } from "./useTasks";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-
-
+  
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -21,7 +20,6 @@ function App() {
     setAllDone,
     addNewTask
   } = useTasks();
-
 
   return (
     <Container>
@@ -55,5 +53,4 @@ function App() {
     </Container>
   );
 };
-
 export default App;
