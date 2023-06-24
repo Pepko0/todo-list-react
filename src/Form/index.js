@@ -14,9 +14,11 @@ const Form = ({ addNewTask }) => {
     };
 
     const focusInput = () => {
-        inputRef.current.focus();
+        if (newTaskContent === "") {
+            inputRef.current.focus();
+        }
     }
-
+    
     return (
         <Body
             onSubmit={onFormSubmit}

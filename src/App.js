@@ -3,12 +3,11 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
-import Container from "./Container";
 import { useTasks } from "./useTasks";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -22,7 +21,7 @@ function App() {
   } = useTasks();
 
   return (
-    <Container>
+    <main>
       <h1>Lista zadań</h1>
       <Section
         title="Dodaj nowe zadanie"
@@ -50,7 +49,7 @@ function App() {
           />
         }
       />
-    </Container>
+    </main>
   );
 };
 export default App;
