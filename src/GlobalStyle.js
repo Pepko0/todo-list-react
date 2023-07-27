@@ -11,7 +11,7 @@ html {
       }
       
       body {
-        background: ${({theme}) => theme.color.gallery};
+        background: ${({ theme }) => theme.color.gallery};
         max-width: 800px;
         padding: 10px;
         margin: 0 auto;
