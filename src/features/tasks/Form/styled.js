@@ -18,8 +18,8 @@ export const NewTask = styled.input`
 `;
 
 export const Button = styled.button`
-    background: teal;
-    color: white;
+    background: ${({theme}) => theme.color.teal};
+    color: ${({theme}) => theme.color.white};
     border: none;
     font-size: 20px;
     height: 40px;

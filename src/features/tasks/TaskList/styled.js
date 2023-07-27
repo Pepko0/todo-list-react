@@ -16,28 +16,28 @@ export const Item = styled.li`
 
     ${({hidden}) => hidden && css`
         display: none;
-        color: red;
+        color: ${({theme}) => theme.color.scarlet};
     `}
 `;
 
 export const Content = styled.span`
     ${({done}) => done && css`
     text-decoration: line-through;
-    color: #cecece;
+    color: ${({theme}) => theme.color.alto};
     list-style: none;
     `}
 `;
 
 export const Button = styled.button`
     border: none; 
-    color: white;
+    color: ${({theme}) => theme.color.white};
     width: 35px;
     height: 35px;
     padding: 0px;
     transition: background 0.3s;
 
     ${({done}) => done && css`
-        background: #8dc477;
+        background: ${({theme}) => theme.color.olivine};
 
         &:hover {
             background: #9edb86;
@@ -47,7 +47,7 @@ export const Button = styled.button`
     `}
 
     ${({remove}) => remove && css`
-        background: rgb(230, 113, 113);
+        background: ${({theme}) => theme.color.sunglo};
         
         &:hover {
             font-weight: bold;

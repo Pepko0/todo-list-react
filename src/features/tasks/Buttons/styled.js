@@ -6,16 +6,16 @@ export const Content = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: transparent;
+  background-color: ${({theme}) => theme.color.transparent};
   border: none;
-  color: teal;
+  color: ${({theme}) => theme.color.teal};
   font-size: 20px;
   transition: 0.5s;
 
   ${({ disabled }) =>
     disabled &&
     css`
-      color: #c1c1c1;
+      color: ${({theme}) => theme.color.silver};
       cursor: default;
       transform: 1s;
     `}
