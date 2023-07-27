@@ -12,6 +12,8 @@ I creted webiste wher You can add new task and change their status
 * *Git* 
 * *React*
 * *BEM*
+* *Redux*
+
 
 ## Website **Operation** and **Design**
 [![readme1.gif](https://i.postimg.cc/5tw0cxdD/readme1.gif)](https://postimg.cc/Y4CkYBSx)
