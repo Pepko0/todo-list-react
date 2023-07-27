@@ -33,7 +33,7 @@ export const Button = styled.button`
         transform: scale(1.1);
     
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         transform: scale(1);
     }
 }

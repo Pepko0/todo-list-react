@@ -10,4 +10,8 @@ export const theme = {
     olivine: "#8dc477",
     sunglo: "#E67171",
   },
+  breakpoint: {
+    mobileMax: 767,
+  }
 };
+
