@@ -1,7 +1,4 @@
 import Section from "../../../common/Section";
-import Form from "../Form";
-import SampleTaskButton from "../SampleTaskButton";
-
 
 const Author = () => (
 <main>
