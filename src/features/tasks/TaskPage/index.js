@@ -12,8 +12,11 @@ function TaskPage () {
     return (
         <main>
                 <Section
-                    title={task.content}
-                    body={<>asdasd</>}
+                    title={task ? task.content : "Nie znaleziono zadania :("}
+                    body={
+                        <><strong>Ukończono: </strong>{task.done ? "Tak" : "Nie"}</>
+
+                    }
                 >
                 </Section>  
         </main>

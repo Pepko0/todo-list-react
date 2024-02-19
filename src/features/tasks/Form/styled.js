@@ -10,13 +10,6 @@ export const Body = styled.form`
   }
 `;
 
-export const NewTask = styled.input`
-  border-radius: 0;
-  border: solid 2px #a1a1a1;
-  height: 40px;
-  padding: 10px;
-`;
-
 export const Button = styled.button`
   background: ${({ theme }) => theme.color.teal};
   color: ${({ theme }) => theme.color.white};
