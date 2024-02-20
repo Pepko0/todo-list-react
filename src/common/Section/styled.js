@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Unit = styled.section`
-  margin: 5px 0;
+  margin: 5px auto;
   background: ${({ theme }) => theme.color.white};
+  max-width: 1100px;
 `;
 
 export const Header = styled.header`
@@ -28,4 +29,5 @@ export const Title = styled.h2`
 
 export const Body = styled.div`
   padding: 15px;
+
 `;

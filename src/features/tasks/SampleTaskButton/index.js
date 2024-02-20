@@ -1,17 +1,10 @@
-import {Button} from "../Buttons/styled"
-import { useDispatch } from "react-redux";
-import { fetchExampleTasks } from "../tasksSlice";
+import {Button} from "./styled";
 
-
-const SampleTaskButton = () => { 
-
-    const dispatch = useDispatch();
-
-    return (
-        <Button onClick={()  => dispatch(fetchExampleTasks())}>
-            Pobierz przykładowe zadania
+const SampleTaskButton = ({text, ...props}) => (
+        
+        <Button {...props}>
+            {text}
         </Button>
-    )
-}
+);
 
 export default SampleTaskButton;
