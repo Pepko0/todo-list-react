@@ -12,7 +12,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     font-size: 23px;;
 
     &.${activeClassName} {
-        font-weight: 700;
+        font-weight: bold;
     }
 `;
 

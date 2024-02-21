@@ -15,6 +15,4 @@ html {
         margin: 0 auto;
         font-family: 'Lato', sans-serif;
       }
-      
-      
 `;

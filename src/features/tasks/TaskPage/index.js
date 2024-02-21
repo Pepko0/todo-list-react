@@ -11,7 +11,7 @@ function TaskPage() {
   return (
     <Container>
       <Section
-        title={task ? task.content : "Nie znaleziono zadania :("}
+        title={task ? task.content : "Nie znaleziono zadania"}
         body={
           <>
             <strong>Ukończono: </strong>
