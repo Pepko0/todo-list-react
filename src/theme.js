@@ -9,6 +9,7 @@ export const theme = {
     alto: "#cecece",
     olivine: "#8dc477",
     sunglo: "#E67171",
+    black: "#000",
   },
   breakpoint: {
     mobileMax: 767,

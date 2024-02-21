@@ -1,6 +1,6 @@
-import { List, Item, Content, Button } from "./styled";
+import { List, Item, Content, Button,StyledLink } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import {
   toggleTaskDone,
   removeTask,
@@ -8,13 +8,13 @@ import {
   selectTaskByQuery,
 } from "../tasksSlice";
 
-
 const TaskList = () => {
   const location = useLocation();
-  const query = (new URLSearchParams(location.search)).get("searchQueryParamName");
+  const query = new URLSearchParams(location.search).get(
+    "searchQueryParamName"
+  );
 
-  
-  const tasks = useSelector(state => selectTaskByQuery(state, query));
+  const tasks = useSelector((state) => selectTaskByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
 
   const dispatch = useDispatch();
@@ -23,15 +23,15 @@ const TaskList = () => {
     <List>
       {tasks.map((task) => (
         <Item key={task.id} hidden={task.done && hideDone}>
-          <Button done onClick={() => dispatch(toggleTaskDone(task.id))}>
+          <Button title="Ustaw jako ukończone" done onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✔" : ""}
           </Button>
 
           <Content done={task.done}>
-            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+            <StyledLink title="Wyświetl szczegóły zadania" to={`/zadania/${task.id}`}>{task.content}</StyledLink>
           </Content>
 
-          <Button remove onClick={() => dispatch(removeTask(task.id))}>
+          <Button title="Usuń zadanie" remove onClick={() => dispatch(removeTask(task.id))}>
             🗑
           </Button>
         </Item>
