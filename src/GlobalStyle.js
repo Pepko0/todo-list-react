@@ -12,7 +12,6 @@ html {
       
       body {
         background: ${({ theme }) => theme.color.gallery};
-        padding: 10px;
         margin: 0 auto;
         font-family: 'Lato', sans-serif;
       }

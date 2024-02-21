@@ -6,7 +6,5 @@ const Author = () => (
     <h1>O autorze</h1>
     <Section title="Kacper Lewko" body={<>Tralalaa</>} />
   </Container>
-
-  
 );
 export default Author;
